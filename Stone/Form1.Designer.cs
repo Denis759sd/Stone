@@ -45,9 +45,11 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Timers.Timer();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -246,6 +248,12 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.SynchronizingObject = this;
+            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -257,13 +265,17 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Тело брошенное под углом к горизонту";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Timers.Timer timer1;
 
         private System.Windows.Forms.PictureBox pictureBox1;
 
