@@ -1,0 +1,10 @@
+D:\Other Projects\C#\Stone\Stone\bin\Debug\Stone.exe.config
+D:\Other Projects\C#\Stone\Stone\bin\Debug\Stone.exe
+D:\Other Projects\C#\Stone\Stone\bin\Debug\Stone.pdb
+D:\Other Projects\C#\Stone\Stone\obj\Debug\Stone.csproj.AssemblyReference.cache
+D:\Other Projects\C#\Stone\Stone\obj\Debug\Stone.Properties.Resources.resources
+D:\Other Projects\C#\Stone\Stone\obj\Debug\Stone.csproj.GenerateResource.cache
+D:\Other Projects\C#\Stone\Stone\obj\Debug\Stone.csproj.CoreCompileInputs.cache
+D:\Other Projects\C#\Stone\Stone\obj\Debug\Stone.exe
+D:\Other Projects\C#\Stone\Stone\obj\Debug\Stone.pdb
+D:\Other Projects\C#\Stone\Stone\obj\Debug\Stone.Form1.resources
