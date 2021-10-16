@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace Stone
 {
@@ -119,6 +111,7 @@ namespace Stone
             y = _h0 + _v0 * _SinA * t - _g * t * t / 2;
             X2 = (int)(kx * x);
             Y2 = (int)(bitmap1.Height - ky * y);
+            
             graphics1.DrawLine(pen2, X1, Y1, X2,Y2);
             graphics2.DrawImage(bitmap1,0,0);
             graphics2.DrawEllipse(pen1, X2 - 5, Y2-5, 11,11);
