@@ -44,6 +44,8 @@ namespace Stone
 
         SolidBrush brush = new SolidBrush(Color.Yellow);
 
+        private bool flag;
+
 
         public Form1()
         {
@@ -53,6 +55,7 @@ namespace Stone
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
+            flag = true;
             
             _v0 = double.Parse(textBox1.Text);
             _angle = double.Parse(textBox2.Text) * Math.PI / 180;
@@ -93,7 +96,6 @@ namespace Stone
             Y1 = (int)(bitmap1.Height - ky * _h0);
             t = 0;
             timer1.Enabled = true;
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -126,6 +128,24 @@ namespace Stone
                 MessageBox.Show("Движение закончено.", "Важное сообщение!!!", MessageBoxButtons.OK);
                 button1.Enabled = true;
             }
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            if (!flag) return;
+            label7.Visible = true;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            if (!flag) return;
+            label7.Visible = false;
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            label7.Left = pictureBox1.Left + e.X + 5;
+            label7.Top = pictureBox1.Top + e.Y + 5;
         }
     }
 }
